@@ -29,30 +29,37 @@ public class LL_UList_Driver {
 		testList.resetList();
 		System.out.println("List Reset.");
 		for (int i=0; i<10; i++)
-			System.out.println("Next Item in Sequence: " + testList.getNextItem());		
+			System.out.println("Next Item in Sequence: " + testList.getNextItem());
+
 		
+		// Homework question 4 part A and B
 		LL_UList myLL = new LL_UList();
 		for (int i=1; i<7; i++)
 			myLL.putItem(i);
 		System.out.println("List:");
-	    myLL.printList();
+	    	myLL.printList();
 
-	    System.out.println("Maximum value: " + myLL.getMax());
-	    System.out.println("Range: " + myLL.getRange());
+	    	// Homework question 4 part A
+	    	System.out.println("Maximum value: " + myLL.getMax());
+	    	// Homework question 4 part B
+	    	System.out.println("Range: " + myLL.getRange());
 	    
-	    LL_UList newList = new LL_UList();
-	    newList.putItem(5);
-	    newList.putItem(1);
-	    newList.putItem(3);
-	    newList.putItem(9);
-	    newList.putItem(7);
-	    newList.putItem(11);
 	    
-	    System.out.println("List:");
-	    newList.printList();
+	    	// Homework question 4 part C
+	    	LL_UList newList = new LL_UList();
+	    	newList.putItem(5);
+	    	newList.putItem(1);
+	    	newList.putItem(3);
+	    	newList.putItem(9);
+	    	newList.putItem(7);
+	    	newList.putItem(11);
 	    
-	    LL_UList inRangeLL = newList.duplicateInRange(2, 7);
-	    System.out.println("Filtered LL_UList:");
-	    inRangeLL.printList();
+	    	System.out.println("List:");
+	    	newList.printList();
+	    
+	    
+	    	LL_UList inRangeLL = newList.duplicateInRange(2, 7);
+	    	System.out.println("Filtered LL_UList:");
+	   	inRangeLL.printList();
 	}
 }
