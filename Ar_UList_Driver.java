@@ -31,29 +31,34 @@ public class Ar_UList_Driver {
 		for (int i=0; i<10; i++)
 			System.out.println("Next Item in Sequence: " + testList.getNextItem());	
 		
+		// Homework question 4 part A and B
 		Ar_UList myAL = new Ar_UList();
 		for (int i=1; i<7; i++)
 			myAL.putItem(i);
 		System.out.println("List:");
-	    myAL.printList();
+	    	myAL.printList();
 
-	    System.out.println("Maximum value: " + myAL.getMax());
-	    System.out.println("Range: " + myAL.getRange());
+	    	// Homework question 4 part A
+	    	System.out.println("Maximum value: " + myAL.getMax());
+	    	// Homework question 4 part B
+	    	System.out.println("Range: " + myAL.getRange());
 		
-	    Ar_UList newList = new Ar_UList();
-	    newList.putItem(5);
-	    newList.putItem(1);
-	    newList.putItem(3);
-	    newList.putItem(9);
-	    newList.putItem(7);
-	    newList.putItem(11);
+	    
+	    	// Homework question 4 part C
+	    	Ar_UList newList = new Ar_UList();
+	    	newList.putItem(5);
+	    	newList.putItem(1);
+	    	newList.putItem(3);
+	    	newList.putItem(9);
+	    	newList.putItem(7);
+	    	newList.putItem(11);
 	    
 	    
-	    System.out.println("List:");
-	    newList.printList();
+	    	System.out.println("List:");
+	    	newList.printList();
 	    
-	    Ar_UList inRangeAr = newList.duplicateInRange(2, 7);
-	    System.out.println("Filtered Ar_UList:");
-	    inRangeAr.printList();
+	    	Ar_UList inRangeAr = newList.duplicateInRange(2, 7);
+	    	System.out.println("Filtered Ar_UList:");
+	    	inRangeAr.printList();
 	}
 }
